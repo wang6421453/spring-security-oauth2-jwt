@@ -9,3 +9,6 @@ http://localhost:9090/order/1?access_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.
 3.
 ijiami.jks秘钥库，私钥别名：ijiami，密码123456
 public.txt 公钥
+
+4.
+token中携带了用户对象（默认jwt只存放用户名），并在资源服务器中获取用户对象，然后存放到SecurityContextHolder.getContext().getAuthentication().getPrincipal()中
